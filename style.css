@@ -1,0 +1,61 @@
+@charset "UTF-8";
+* {
+  font-family: "Krona One", 微軟正黑體, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #222;
+}
+
+.new {
+  height: 20px;
+  width: 50px;
+  background: #DDD;
+}
+
+.box {
+  height: 500px;
+  width: 500px;
+  background: #222;
+}
+.box td {
+  background: #DDD;
+  border: solid 3px #222;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  text-align: center;
+  font-size: 100px;
+  color: #222;
+  cursor: pointer;
+}
+
+.box2 {
+  margin: 10px;
+  height: 40px;
+  display: flex;
+}
+.box2 .statusbar {
+  height: 40px;
+  width: 330px;
+  background: #DDD;
+  color: #222;
+  text-align: center;
+  line-height: 40px;
+}
+.box2 .newbutton {
+  margin-left: 10px;
+  height: 40px;
+  width: 150px;
+  background: #DDD;
+  color: #222;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
