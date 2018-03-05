@@ -1,24 +1,27 @@
 var turn = 0;
 var f = 0;
-$(".sb").click(function() {
-  if (f != 1) {
-    if (turn == 0 && $(this).text() == "") {
-      turn = 1;
-      $(this).text("O");
+$(document).ready(function () {
+  $(".sb").click(function() {
+    if (f != 1) {
+      if (turn == 0 && $(this).text() == "") {
+        turn = 1;
+        $(this).text("O");
+      }
+      if (turn == 1 && $(this).text() == "") {
+        turn = 0;
+        $(this).text("X");
+      }
+      judgement();
     }
-    if (turn == 1 && $(this).text() == "") {
-      turn = 0;
-      $(this).text("X");
-    }
-    judgement();
-  }
+  });
+  $('.newbutton').click(function() {
+    turn=0;
+    f=0;
+    $('.sb').text("");
+    $('.statusbar').text("");
+  });
 });
-$('.newbutton').click(function() {
-  turn=0;
-  f=0;
-  $('.sb').text("");
-  $('.statusbar').text("");
-});
+
 function judgement() {
   var result = false;
   for (var i = 1; i <= 9; i = i + 3) {
