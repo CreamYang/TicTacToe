@@ -1,6 +1,14 @@
 var turn = 0;
 var f = 0;
 $(document).ready(function () {
+  $(".sb").mouseenter(function(){
+    $(this).css("background","#555");
+    $(this).css("color","#FFF");
+  });
+  $(".sb").mouseleave(function(){
+    $(this).css("background","#DDD");
+    $(this).css("color","#222");
+  });
   $(".sb").click(function() {
     if (f != 1) {
       if (turn == 0 && $(this).text() == "") {
@@ -13,6 +21,14 @@ $(document).ready(function () {
       }
       judgement();
     }
+  });
+  $(".newbutton").mouseenter(function(){
+    $(this).css("background","#555");
+    $(this).css("color","#FFF");
+  });
+  $(".newbutton").mouseleave(function(){
+    $(this).css("background","#DDD");
+    $(this).css("color","#222");
   });
   $('.newbutton').click(function() {
     turn=0;
