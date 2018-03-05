@@ -35,7 +35,10 @@ html, body {
   color: #222;
   cursor: pointer;
 }
-
+.box td:hover {
+  background: #555;
+  color: #FFF;
+}
 .box2 {
   margin: 10px;
   height: 40px;
@@ -58,4 +61,8 @@ html, body {
   text-align: center;
   line-height: 40px;
   cursor: pointer;
+}
+.box2 .newbutton:hover {
+  background: #555;
+  color: #FFF;
 }
